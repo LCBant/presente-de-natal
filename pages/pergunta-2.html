@@ -10,15 +10,47 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-<div class="container text-center">
-<p> Agora que sei que me ama, queria saber uma coisa: Você acha que eu te amo também? Se sim, em quantos %? Quero ver acertar essa kkkkkkk</p>
-<button> 0% </button>
-<button> 50% </button>
-<button> 100% </button>
-<button> 1000% </button>
-<a class="btn btn-success btn-lg mt-3" href="video-especial.html" role="button">Continuar</a>
+<div class="container text-center mt-5">
+<img class="img" src="/assets/cabybara.jpg" width="400px" height="400px">
+<h1 class="typewriter" data-reveal="quizSection"> 
+    Agora que sei que me ama, queria saber uma coisa: Você acha que eu te amo também? Se sim, em quantos %? Quero ver acertar essa kkkkkkk
+</h1>
+<div id="quizSection" class="hidden mt-4">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3">
+                <button class="btn btn-outline-dark btn-lg w-100 p-3 quiz-option" 
+                        onclick="handleAnswerFeedback(this, 'video-especial.html', 'Não né, te amo sim. Meu amor por ti é incalculável!')">
+                    0%
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <button class="btn btn-outline-dark btn-lg w-100 p-3 quiz-option" 
+                        onclick="handleAnswerFeedback(this, 'video-especial.html', 'Errou! Meu amor por ti é incalculável!')">
+                    50%
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-6 col-md-3">
+                <button class="btn btn-outline-dark btn-lg w-100 p-3 quiz-option" 
+                        onclick="handleAnswerFeedback(this, 'video-especial.html', 'Errou! Meu amor por ti é incalculável!')">
+                    100%
+                </button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button class="btn btn-outline-dark btn-lg w-100 p-3 quiz-option" 
+                        onclick="handleAnswerFeedback(this, 'video-especial.html', 'Errou! Meu amor por ti é incalculável!')">
+                    1000%
+                </button>
+            </div>
+
+            <p id="resposta-texto" class="mt-4 fs-3 fw-bold text-danger"></p>
+        </div>
+    </div>
 </div>
 <!--Bootstrap-->
+<script src="/scripts/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

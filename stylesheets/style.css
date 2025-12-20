@@ -1,3 +1,42 @@
 body {
     font-family: "Indie Flower", cursive;
 }
+
+/* Element starts invisible */
+.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevents clicking while invisible */
+    transition: opacity 2s ease; /* Takes 2 seconds to fully fade in */
+}
+
+/* Class added by JS to show the element */
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#resposta-texto {
+            font-family: 'Indie Flower', cursive;
+            min-height: 30px; /* Reserva espaço para não pular a tela */
+            transition: opacity 0.5s ease;
+        }
+
+/* Corações */
+.coracao {
+    position: fixed;
+    top: -10px;
+    font-size: 25px;
+    color: red;
+    opacity: 0.8;
+    animation: cair linear forwards;
+    pointer-events: none;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
