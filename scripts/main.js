@@ -80,5 +80,5 @@ function handleAnswerFeedback(element, nextPage, message) {
     // 4. Espera 2.5 segundos e muda de página
     setTimeout(() => {
         window.location.href = nextPage;
-    }, 2500);
+    }, 3000);
 }
