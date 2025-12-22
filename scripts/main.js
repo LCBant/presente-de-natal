@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-// hearts
 function criarCoracao() {
     const coracao = document.createElement("div");
     coracao.classList.add("coracao");
@@ -54,30 +52,21 @@ function criarCoracao() {
         coracao.remove();
     }, 5000);
 }
+
 setInterval(criarCoracao, 300);
 
-/* * handleAnswerFeedback
- * element: O botão clicado
- * nextPage: A próxima página
- * message: A mensagem que vai aparecer EMBAIXO
- */
 function handleAnswerFeedback(element, nextPage, message) {
-    // 1. Desabilita todos os botões para ela não clicar em outro
     const buttons = document.querySelectorAll('.quiz-option');
     buttons.forEach(btn => btn.disabled = true);
 
-    // 2. Destaca o botão clicado (ficando preenchido)
     element.classList.remove('btn-outline-success');
     element.classList.add('btn-success');
 
-    // 3. Coloca a mensagem na div de resposta
     const feedbackElement = document.getElementById('resposta-texto');
     feedbackElement.innerText = message;
     
-    // Opcional: Adiciona uma cor ou animação ao texto
     feedbackElement.style.opacity = "1";
 
-    // 4. Espera 2.5 segundos e muda de página
     setTimeout(() => {
         window.location.href = nextPage;
     }, 3000);
