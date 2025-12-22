@@ -13,6 +13,14 @@ body {
     margin: 0; /* Remove margens padrões do navegador */
 }
 
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 24px;
+}
+
 /* Element starts invisible */
 .hidden {
     opacity: 0;
