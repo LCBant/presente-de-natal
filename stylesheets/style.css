@@ -13,12 +13,23 @@ body {
     margin: 0; /* Remove margens padrões do navegador */
 }
 
+/* Configuração para Celular (Mobile First) */
 h1 {
-    font-size: 40px;
+    font-size: 37px; /* Grande, mas não quebra linhas curtas */
+    line-height: 1.2; /* Títulos ficam melhores com linhas mais juntas */
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 24px;
+    font-size: 23px; /* O tamanho perfeito para Indie Flower no celular */
+    line-height: 1.6; /* IMPORTANTE: Dá espaço para as letras não se encostarem */
+    letter-spacing: 0.5px; /* Ajuda muito na leitura de fontes cursivas */
+}
+
+/* Os botões precisam ser grandes para o dedo */
+.btn {
+    font-size: 31px; 
+    font-weight: bold;
 }
 
 /* Element starts invisible */
