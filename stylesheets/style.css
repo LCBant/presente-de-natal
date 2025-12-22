@@ -1,5 +1,16 @@
 body {
     font-family: "Indie Flower", cursive;
+    
+    /* Configuração do Fundo */
+    background-image: url(../assets/background-website.jpg);
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat;       /* Não deixa repetir */
+    background-size: cover;             /* Estica a imagem para cobrir TUDO sem distorcer */
+    background-attachment: fixed;       /* O fundo fica parado enquanto você rola a página */
+    
+    /* Importante: Garante que o fundo preencha a tela mesmo com pouco conteúdo */
+    min-height: 100vh;
+    margin: 0; /* Remove margens padrões do navegador */
 }
 
 /* Element starts invisible */
